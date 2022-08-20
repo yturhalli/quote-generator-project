@@ -24,7 +24,6 @@ async function getQuoteFromApi() {
 
     try {
         showLoadingSpinner();
-        // const res = await fetch(apiURL);
         const res = await fetch(proxyUrl + apiUrl)
         data = await res.json();
 
